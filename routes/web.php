@@ -22,3 +22,5 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 })->name('dashboard');
 
 Route::get('/{any}', 'App\Http\Controllers\PagesController@index')->where('any', '.*');
+
+//یک تغییر ایجاد شد
